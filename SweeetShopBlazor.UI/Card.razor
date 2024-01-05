@@ -1,0 +1,16 @@
+﻿@using MudBlazor
+
+<MudCard>
+    <MudCardMedia Image="images/door.jpg" Height="200" />
+    <MudCardContent>
+        <MudText Typo="Typo.h5">@HeaderName</MudText>
+        <MudText Typo="Typo.body2">Old paint found on a stone house door.</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default"/>
+        @Likes
+        <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+    </MudCardActions>
+</MudCard>
+

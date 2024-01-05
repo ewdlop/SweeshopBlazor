@@ -1,0 +1,19 @@
+﻿@page "/"
+@using MudBlazor
+@using SweetShopBlazor.Shared
+
+<PageTitle>Sweet Shop</PageTitle>
+
+<MudStack AlignItems="AlignItems.Center" Row="true" Justify="Justify.Center">
+    <MudText Typo="Typo.h1">Welcome!</MudText>
+</MudStack>
+
+<MudStack AlignItems="AlignItems.Center" Row="true" Justify="Justify.Center">
+    @foreach(Sweet item in _sweets)
+    {
+        <SweeetShopBlazor.UI.Card Likes="item.Likes"></SweeetShopBlazor.UI.Card>
+    }
+</MudStack>
+
+
+
