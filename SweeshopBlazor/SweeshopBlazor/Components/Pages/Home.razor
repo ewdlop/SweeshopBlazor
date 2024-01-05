@@ -11,7 +11,7 @@
 <MudStack AlignItems="AlignItems.Center" Row="true" Justify="Justify.Center">
     @foreach(Sweet item in _sweets)
     {
-        <SweeetShopBlazor.UI.Card Likes="item.Likes"></SweeetShopBlazor.UI.Card>
+        <SweeshopBlazor.Client.Card ImageUrl="@($"{item.Name}.png")" Header="@item.Name" Body="@item.Description" Likes="item.Likes"></SweeshopBlazor.Client.Card .>
     }
 </MudStack>
 

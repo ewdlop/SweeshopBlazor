@@ -21,8 +21,8 @@ public record Sweet(string Name, string Description, int Likes)
         Random randomLikes = new();
         Random randomSweet = new Random();
         string nameWithDescription = SweetNamesWithDescription[randomSweet.Next(0, SweetNamesWithDescription.Length)];
-        string name = nameWithDescription.Split(" - ")[0];
-        string description = nameWithDescription.Split(" - ")[1];
+        string name = nameWithDescription.Split(" - ")[0].Trim();
+        string description = nameWithDescription.Split(" - ")[1].Trim();
         return new Sweet(name,description ,randomLikes.Next(0,10));
     }
 }

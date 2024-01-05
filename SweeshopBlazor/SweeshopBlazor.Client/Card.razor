@@ -1,0 +1,17 @@
+﻿@using MudBlazor
+@rendermode InteractiveWebAssembly
+
+<MudCard>
+    <MudCardMedia Image="@ImageUrl" Height="200"/>
+    <MudCardContent>
+        <MudText Typo="Typo.h5">@Header</MudText>
+        <MudText Typo="Typo.body2">@Body</MudText>
+    </MudCardContent>
+    <MudCardActions>
+        <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="@(Liked? Color.Error : Color.Default)" OnClick="@ToggleLiked"/>
+        @Likes
+        <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+        <MudButton Variant="Variant.Text" Color="Color.Primary">Learn More</MudButton>
+    </MudCardActions>
+</MudCard>
+
