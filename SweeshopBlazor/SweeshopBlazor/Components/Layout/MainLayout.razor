@@ -1,7 +1,5 @@
 ﻿@using MudBlazor
 @inherits LayoutComponentBase
-@inject IMasonryInterop MasonryInterop
-@using Soenneker.Blazor.Masonry.Abstract
 <MudThemeProvider />
 <MudDialogProvider />
 <MudSnackbarProvider />
@@ -15,7 +13,9 @@
         <SweeshopBlazor.Client.NavMenu/>
     </MudDrawer>  *@
     <MudMainContent>
-        @Body
+        <MudContainer MaxWidth="MaxWidth.ExtraExtraLarge">
+            @Body
+        </MudContainer>
     </MudMainContent>
 </MudLayout>
 

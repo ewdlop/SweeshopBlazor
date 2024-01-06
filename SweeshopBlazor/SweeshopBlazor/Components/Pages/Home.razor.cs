@@ -17,5 +17,10 @@ public partial class Home
             _sweets.Add(SweetProvider.GetSweetById(i));
         }
     }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await MasonryInterop.Init(".mud-container");
+    }
 }
 

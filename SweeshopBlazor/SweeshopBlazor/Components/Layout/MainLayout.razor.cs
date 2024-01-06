@@ -9,13 +9,4 @@ public partial class MainLayout
     {
         _drawerOpen = !_drawerOpen;
     }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if(firstRender)
-        {
-            await MasonryInterop.Init();
-        }
-        await base.OnAfterRenderAsync(firstRender);
-    }
 }

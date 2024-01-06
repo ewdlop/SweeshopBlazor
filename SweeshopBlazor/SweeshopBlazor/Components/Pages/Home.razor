@@ -1,7 +1,6 @@
 ﻿@page "/"
 @using MudBlazor
 @using SweetShopBlazor.Shared;
-
 <PageTitle>Sweet Shop</PageTitle>
 
 <MudStack AlignItems="AlignItems.Center" Row="true" Justify="Justify.Center">
@@ -12,7 +11,7 @@
 
 </MudStack> *@
 
-<div class="row" data-masonry="{"percentPosition": true }">
+<div class="row" data-masonry='{percentPosition": true }'>
     @foreach(Sweet item in _sweets)
     {
         <div class="col-sm-6 col-lg-4 mb-4">
