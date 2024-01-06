@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweeshopBlazor", "SweeshopB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweeshopBlazor.Client", "SweeshopBlazor.Client\SweeshopBlazor.Client.csproj", "{44038931-9324-4624-A938-7792B12E7D80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweeetShopBlazor.UI", "..\SweeetShopBlazor.UI\SweeetShopBlazor.UI.csproj", "{B8F1BDA6-DDFD-4E6F-A9FB-DF6866ECD630}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SweetshopBlazor.Shared", "..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj", "{C2662229-33A6-4102-AF70-BAB2288BCE0D}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{44038931-9324-4624-A938-7792B12E7D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44038931-9324-4624-A938-7792B12E7D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44038931-9324-4624-A938-7792B12E7D80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8F1BDA6-DDFD-4E6F-A9FB-DF6866ECD630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8F1BDA6-DDFD-4E6F-A9FB-DF6866ECD630}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8F1BDA6-DDFD-4E6F-A9FB-DF6866ECD630}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8F1BDA6-DDFD-4E6F-A9FB-DF6866ECD630}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C2662229-33A6-4102-AF70-BAB2288BCE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C2662229-33A6-4102-AF70-BAB2288BCE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2662229-33A6-4102-AF70-BAB2288BCE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU

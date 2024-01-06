@@ -11,6 +11,8 @@ public partial class Card
     [Parameter]
     public string Body { get; set; }
     [Parameter]
+    public string Href { get; set; }
+    [Parameter]
     public int Likes { get; set; }
     public bool Liked { get; protected set; }
 

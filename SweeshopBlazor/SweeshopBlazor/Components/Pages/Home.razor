@@ -7,13 +7,20 @@
 <MudStack AlignItems="AlignItems.Center" Row="true" Justify="Justify.Center">
     <MudText Typo="Typo.h1">Welcome!</MudText>
 </MudStack>
-
+@* 
 <MudStack AlignItems="AlignItems.Center" Row="true" Justify="Justify.Center">
+
+</MudStack> *@
+
+<div class="row" data-masonry="{"percentPosition": true }">
     @foreach(Sweet item in _sweets)
     {
-        <SweeshopBlazor.Client.Card ImageUrl="@($"{item.Name}.png")" Header="@item.Name" Body="@item.Description" Likes="item.Likes"></SweeshopBlazor.Client.Card .>
+        <div class="col-sm-6 col-lg-4 mb-4">
+            <SweeshopBlazor.Client.Card ImageUrl="@($"{item.Name}.png")" Header="@item.Name" Body="@item.Description" Likes="item.Likes" Href="@($"BrowseSweet/{item.Id}")"></SweeshopBlazor.Client.Card .>
+        </div>
+
     }
-</MudStack>
+</div>
 
 
 

@@ -1,4 +1,5 @@
 using MudBlazor.Services;
+using Soenneker.Blazor.Masonry.Registrars;
 using SweeshopBlazor.Client;
 using SweeshopBlazor.Components;
 using SweeshopBlazor.Services;
@@ -11,6 +12,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 builder.Services.AddMudServices();
 builder.Services.AddSingleton<ISweetProvider, SweetProvider>();
+builder.Services.AddMasonry();
 
 var app = builder.Build();
 
