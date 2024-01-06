@@ -1,6 +1,7 @@
 using MudBlazor.Services;
 using Soenneker.Blazor.Masonry.Registrars;
 using SweeshopBlazor.Client;
+using SweeshopBlazor.Client.Services;
 using SweeshopBlazor.Components;
 using SweeshopBlazor.Services;
 using SweetshopBlazor.Shared.interfaces;
@@ -11,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 builder.Services.AddMudServices();
+builder.Services.AddScoped<IClipboardService, ClipboardService>();
 builder.Services.AddSingleton<ISweetProvider, SweetProvider>();
 builder.Services.AddMasonry();
 

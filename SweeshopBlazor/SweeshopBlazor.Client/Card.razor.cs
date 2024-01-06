@@ -10,6 +10,8 @@ public partial class Card
     public required IClipboardService ClipboardService { get; init; }
     [Inject]
     public required ISnackbar Snackbar { get; init; }
+    [Inject]
+    public required NavigationManager NavigationManager { get; init; }
     [Parameter]
     public string ImageUrl { get; set; }
     [Parameter]
@@ -43,6 +45,6 @@ public partial class Card
     public void OnCopyToClipboard()
     {
         Snackbar.Add("Link Copied", Severity.Normal);
-        ClipboardService.CopyToClipboard(Href);
+        ClipboardService.CopyToClipboard($"{NavigationManager.BaseUri}{Href}");
     }
 }

@@ -10,8 +10,8 @@
     <MudCardActions>
         <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="@(Liked? Color.Error : Color.Default)" OnClick="@ToggleLiked"/>
         @Likes
-        <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
-        <MudLink Href="@Href" OnClick="OnCopyToClipboard">Learn More</MudLink>
+        <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" OnClick="@OnCopyToClipboard" />
+        <MudLink Href="@Href">Learn More</MudLink>
     </MudCardActions>
 </MudCard>
 
