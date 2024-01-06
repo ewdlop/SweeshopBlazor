@@ -14,7 +14,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\SweeetShopBlazor.UI\SweeetShopBlazor.UI.csproj" />
-    <ProjectReference Include="..\..\SweetShopBlazor.Shared\SweetShopBlazor.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\" />
   </ItemGroup>
 
 </Project>

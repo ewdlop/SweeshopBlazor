@@ -1,6 +1,8 @@
 using MudBlazor.Services;
-using SweeshopBlazor.Client.Pages;
+using SweeshopBlazor.Client;
 using SweeshopBlazor.Components;
+using SweeshopBlazor.Services;
+using SweetShopBlazor.Shared;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 builder.Services.AddMudServices();
+builder.Services.AddSingleton<ISweetProvider, SweetProvider>();
 
 var app = builder.Build();
 
@@ -30,6 +33,6 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(Counter).Assembly);
+    .AddAdditionalAssemblies(typeof(Card).Assembly);
 
 app.Run();

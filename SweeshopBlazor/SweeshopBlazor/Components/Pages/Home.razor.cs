@@ -1,29 +1,20 @@
+using Microsoft.AspNetCore.Components;
 using SweetShopBlazor.Shared;
 
 namespace SweeshopBlazor.Components.Pages;
 
 public partial class Home
 {
-    private List<Sweet> _sweets = new()
-    {
-        Sweet.GetRandomSweet(),
-        Sweet.GetRandomSweet(),
-        Sweet.GetRandomSweet(),
-        Sweet.GetRandomSweet(),
-        Sweet.GetRandomSweet()
-    };
+    [Inject]
+    public required ISweetProvider SweetProvider { get; set; }
+    private List<Sweet> _sweets = new();
 
-    protected override void OnAfterRender(bool firstRender)
+    protected override void OnInitialized()
     {
-        if(firstRender)
+        for (int i = 0; i < 10; i++)
         {
-            //_sweets.Add(new Sweet());
-            //_sweets.Add(new Sweet());
-            //_sweets.Add(new Sweet());
-            //_sweets.Add(new Sweet());
-            //StateHasChanged();
+            _sweets.Add(SweetProvider.GetSweetById(i));
         }
-        base.OnAfterRender(firstRender);
     }
 }
 

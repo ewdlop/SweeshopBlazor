@@ -16,8 +16,4 @@
     <PackageReference Include="MudBlazor" Version="6.12.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SweetShopBlazor.Shared\SweetShopBlazor.Shared.csproj" />
-  </ItemGroup>
-
 </Project>

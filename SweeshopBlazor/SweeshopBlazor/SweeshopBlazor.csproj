@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\SweeetShopBlazor.UI\SweeetShopBlazor.UI.csproj" />
-    <ProjectReference Include="..\..\SweetShopBlazor.Shared\SweetShopBlazor.Shared.csproj" />
+    <ProjectReference Include="..\..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj" />
     <ProjectReference Include="..\SweeshopBlazor.Client\SweeshopBlazor.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
   </ItemGroup>
