@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SweeshopBlazor", "SweeshopB
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SweeshopBlazor.Client", "SweeshopBlazor.Client\SweeshopBlazor.Client.csproj", "{44038931-9324-4624-A938-7792B12E7D80}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SweetshopBlazor.Shared", "..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj", "{C2662229-33A6-4102-AF70-BAB2288BCE0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SweetshopBlazor.Shared", "SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj", "{8E4B691C-F4E7-4665-9892-2AE3F6628337}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{44038931-9324-4624-A938-7792B12E7D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44038931-9324-4624-A938-7792B12E7D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44038931-9324-4624-A938-7792B12E7D80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2662229-33A6-4102-AF70-BAB2288BCE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2662229-33A6-4102-AF70-BAB2288BCE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2662229-33A6-4102-AF70-BAB2288BCE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2662229-33A6-4102-AF70-BAB2288BCE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4B691C-F4E7-4665-9892-2AE3F6628337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4B691C-F4E7-4665-9892-2AE3F6628337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4B691C-F4E7-4665-9892-2AE3F6628337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4B691C-F4E7-4665-9892-2AE3F6628337}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

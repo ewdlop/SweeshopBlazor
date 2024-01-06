@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj" />
+    <ProjectReference Include="..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj" />
   </ItemGroup>
 
 </Project>

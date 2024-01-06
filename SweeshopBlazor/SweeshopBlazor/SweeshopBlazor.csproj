@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj" />
     <ProjectReference Include="..\SweeshopBlazor.Client\SweeshopBlazor.Client.csproj" />
+    <ProjectReference Include="..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
     <PackageReference Include="MudBlazor" Version="6.12.0" />
     <PackageReference Include="Soenneker.Blazor.Masonry" Version="2.1.61" />
