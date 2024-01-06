@@ -8,4 +8,5 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 
 builder.Services.AddMudServices();
 builder.Services.AddScoped<IClipboardService, ClipboardService>();
+builder.Services.AddSingleton<IShoppingCartService, ShoppingCartService>();
 await builder.Build().RunAsync();

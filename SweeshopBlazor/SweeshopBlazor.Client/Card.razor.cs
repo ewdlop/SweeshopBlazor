@@ -9,19 +9,21 @@ public partial class Card
     [Inject]
     public required IClipboardService ClipboardService { get; init; }
     [Inject]
-    public required ISnackbar Snackbar { get; init; }
+    public required ISnackbar Snackbar { get; init; } 
     [Inject]
     public required NavigationManager NavigationManager { get; init; }
     [Parameter]
-    public string ImageUrl { get; set; }
+    public string ImageUrl { get; set; } = string.Empty;
     [Parameter]
-    public string Header { get; set; }
+    public string Header { get; set; } = string.Empty;
     [Parameter]
-    public string Body { get; set; }
+    public string Body { get; set; } = string.Empty;
     [Parameter]
-    public string Href { get; set; }
+    public string Href { get; set; } = string.Empty;
     [Parameter]
     public int Likes { get; set; }
+    [Parameter]
+    public int Height { get; set; } = 200;
     public bool Liked { get; protected set; }
 
     public void ToggleLikes(bool like)

@@ -9,13 +9,13 @@ public partial class Home
 {
     [Inject]
     public required ISweetProvider SweetProvider { get; init; }
-    private List<Sweet> _sweets = new();
+    private List<Sweet> Sweets { get; init; } = new();
 
     protected override void OnInitialized()
     {
         for (int i = 0; i < 10; i++)
         {
-            _sweets.Add(SweetProvider.GetSweetById(i));
+            Sweets.Add(SweetProvider.GetSweetById(i));
         }
     }
 }

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweeshopBlazor", "SweeshopBlazor\SweeshopBlazor.csproj", "{2BC6AB00-1233-49D5-90C6-22F628BBAF7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SweeshopBlazor", "SweeshopBlazor\SweeshopBlazor.csproj", "{2BC6AB00-1233-49D5-90C6-22F628BBAF7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SweeshopBlazor.Client", "SweeshopBlazor.Client\SweeshopBlazor.Client.csproj", "{44038931-9324-4624-A938-7792B12E7D80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SweeshopBlazor.Client", "SweeshopBlazor.Client\SweeshopBlazor.Client.csproj", "{44038931-9324-4624-A938-7792B12E7D80}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SweetshopBlazor.Shared", "..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj", "{C2662229-33A6-4102-AF70-BAB2288BCE0D}"
 EndProject

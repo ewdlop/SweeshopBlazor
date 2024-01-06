@@ -1,3 +1,10 @@
-﻿@page "/BrowseSweet/{id:int}"
+﻿@page "/BrowseSweet/{Id:int}"
+@using MudBlazor
 @attribute [StreamRendering]
 
+<MudStack AlignItems="AlignItems.Center" Row="true" Justify="Justify.Center">
+    <div class="col-sm-6 col-lg-4 mb-4">
+        <SweeshopBlazor.Client.Card Height="1024" ImageUrl="@($"{Sweet?.Name}.png")" Header="@Sweet?.Name" Body="@Sweet?.Description" Likes="Sweet?.Likes ?? 0" Href="@($"BrowseSweet/{Sweet?.Id ?? 0}")"></SweeshopBlazor.Client.Card>
+    </div>
+</MudStack>
+<CommentSection></CommentSection>

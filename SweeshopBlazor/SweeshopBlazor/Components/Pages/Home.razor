@@ -8,7 +8,7 @@
 </MudStack>
 
 <div class="row">
-    @foreach(Sweet item in _sweets)
+    @foreach(Sweet item in Sweets)
     {
         <div class="col-sm-6 col-lg-4 mb-4">
             <SweeshopBlazor.Client.Card ImageUrl="@($"{item.Name}.png")" Header="@item.Name" Body="@item.Description" Likes="item.Likes" Href="@($"BrowseSweet/{item.Id}")"></SweeshopBlazor.Client.Card .>

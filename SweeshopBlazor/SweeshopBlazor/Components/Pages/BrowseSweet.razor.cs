@@ -10,14 +10,10 @@ namespace SweeshopBlazor.Components.Pages
         public int Id { get; set; }
         [Inject]
         public required ISweetProvider SweetService { get; set; }
-        public Sweet Sweet { get; protected set; }
-        protected override void OnAfterRender(bool firstRender)
+        public Sweet? Sweet { get; protected set; }
+        protected override void OnInitialized()
         {
-            if (firstRender)
-            {
-                Sweet = SweetService.GetSweetById(Id);
-            }
-            base.OnAfterRender(firstRender);
+            Sweet = SweetService.GetSweetById(Id);
         }
     }
 }

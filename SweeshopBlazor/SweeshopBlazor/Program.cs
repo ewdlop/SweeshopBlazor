@@ -14,6 +14,7 @@ builder.Services.AddRazorComponents()
 builder.Services.AddMudServices();
 builder.Services.AddScoped<IClipboardService, ClipboardService>();
 builder.Services.AddSingleton<ISweetProvider, SweetProvider>();
+builder.Services.AddSingleton<IShoppingCartService, ShoppingCartService>();
 builder.Services.AddMasonry();
 
 var app = builder.Build();

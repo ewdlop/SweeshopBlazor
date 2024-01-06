@@ -1,0 +1,23 @@
+﻿@using MudBlazor
+
+<MudContainer>
+    <MudItem xs="12">
+        <MudText Typo="Typo.h5">Comments</MudText>
+    </MudItem>
+    @foreach (var comment in Comments)
+    {
+        <MudStack Row="true">
+            <MudAvatar Color="Color.Warning" Variant="Variant.Filled">
+                <MudIcon Color="Color.Dark" Icon="@Icons.Custom.Uncategorized.Radioactive" Size="Size.Large" />
+            </MudAvatar>
+            <MudItem>
+                <MudText Typo="Typo.h6">@comment.UserName</MudText>
+                <MudText Typo="Typo.body2">@comment.Text</MudText>
+            </MudItem>
+        </MudStack>
+    }
+    <MudItem xs="12">
+        <MudTextField T="string" Label="Add a comment" Variant="Variant.Outlined" AdornmentIcon="@Icons.Material.Filled.Comment" FullWidth />
+        <MudButton Color="Color.Primary" Variant="Variant.Filled">Post Comment</MudButton>
+    </MudItem>
+</MudContainer>
