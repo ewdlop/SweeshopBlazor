@@ -18,4 +18,8 @@
     <Folder Include="Pages\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\SweetShopBlazor.Shared\SweetshopBlazor.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,9 +1,15 @@
 using Microsoft.AspNetCore.Components;
+using MudBlazor;
+using SweetshopBlazor.Shared.interfaces;
 
 namespace SweeshopBlazor.Client;
 
 public partial class Card
 {
+    [Inject]
+    public required IClipboardService ClipboardService { get; init; }
+    [Inject]
+    public required ISnackbar Snackbar { get; init; }
     [Parameter]
     public string ImageUrl { get; set; }
     [Parameter]
@@ -32,5 +38,11 @@ public partial class Card
     {
         Liked = !Liked;
         ToggleLikes(Liked);
+    }
+
+    public void OnCopyToClipboard()
+    {
+        Snackbar.Add("Link Copied", Severity.Normal);
+        ClipboardService.CopyToClipboard(Href);
     }
 }

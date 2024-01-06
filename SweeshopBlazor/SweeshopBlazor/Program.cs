@@ -3,7 +3,7 @@ using Soenneker.Blazor.Masonry.Registrars;
 using SweeshopBlazor.Client;
 using SweeshopBlazor.Components;
 using SweeshopBlazor.Services;
-using SweetShopBlazor.Shared;
+using SweetshopBlazor.Shared.interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Soenneker.Blazor.Masonry;
+using SweetshopBlazor.Shared.interfaces;
 using SweetShopBlazor.Shared;
 
 namespace SweeshopBlazor.Components.Pages;
@@ -7,7 +8,7 @@ namespace SweeshopBlazor.Components.Pages;
 public partial class Home
 {
     [Inject]
-    public required ISweetProvider SweetProvider { get; set; }
+    public required ISweetProvider SweetProvider { get; init; }
     private List<Sweet> _sweets = new();
 
     protected override void OnInitialized()
@@ -16,11 +17,6 @@ public partial class Home
         {
             _sweets.Add(SweetProvider.GetSweetById(i));
         }
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        await MasonryInterop.Init(".mud-container");
     }
 }
 

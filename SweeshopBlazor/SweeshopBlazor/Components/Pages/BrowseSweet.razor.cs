@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Components;
+using SweetshopBlazor.Shared.interfaces;
 using SweetShopBlazor.Shared;
 
 namespace SweeshopBlazor.Components.Pages

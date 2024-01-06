@@ -1,4 +1,5 @@
-﻿using SweetShopBlazor.Shared;
+﻿using SweetshopBlazor.Shared.interfaces;
+using SweetShopBlazor.Shared;
 
 namespace SweeshopBlazor.Services;
 
