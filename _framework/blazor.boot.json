@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "SweeshopBlazor.Client",
   "resources": {
-    "hash": "sha256-y+pUCMwz1Tr9itQOLFfnpv7IcYPJG63t8FNGyU950ss=",
+    "hash": "sha256-ziXueSeSJLOmYu4a6m1xhZ34E+odnlkGmYOjazGb6oc=",
     "jsModuleNative": {
       "dotnet.native.8.0.11.n1sf6xr5tz.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -36,8 +36,8 @@
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-CQVLCKiSxLN5ghyJZG3mhnMGRROdqrbNUjtAXB0nWb8=",
       "MudBlazor.wasm": "sha256-+YeJG4L+3Pvj8s9wR6ymNEwFDMZEgTNV1EVr8lFwcDc=",
       "Soenneker.Blazor.Masonry.wasm": "sha256-BuOsktXDb73bsKTW2Je9/Obn+Naty1MeDUs8I5B7R/4=",
-      "SweeshopBlazor.Client.wasm": "sha256-lw4Oh8WwjF9iNxjOiv3J75QwAtSgQj/+uShVz/2fjno=",
-      "SweetshopBlazor.Shared.wasm": "sha256-47M8SVobWY+4YorigLlRi434344w4YpyF6AN5jW1ItA=",
+      "SweeshopBlazor.Client.wasm": "sha256-66Gwj4Cm66d9SOIjSECmgjd+6PCcNej6vUysHEZiySk=",
+      "SweetshopBlazor.Shared.wasm": "sha256-ZNYq2Td/Pz8TDfmQ3BA0P7Sv+gofGhGpyPDLA4N01dI=",
       "System.Collections.Concurrent.wasm": "sha256-RMt7hftckDGLynWyxG1ABoFeL/LUrP0xl1zLt50vbDw=",
       "System.Collections.wasm": "sha256-efJPut+6WQ2jjrIxtXnQaUbFxe3zl02bxf5YVPJcx0w=",
       "System.ComponentModel.Annotations.wasm": "sha256-F+XLYmj9KmvG2WkBU6N3TpapU6wytDBjkb1ivzvX3Bk=",
